@@ -66,4 +66,12 @@ public class UserStorage {
     public String toString() {
         return ""+users;
     }
+    public User getUser(long id){
+        for(User user:users){
+            if(user.getId()==id){
+                return user;
+            }
+        }
+        return null;
+    }
 }
